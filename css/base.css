@@ -1,0 +1,38 @@
+/*reset*/
+* ,*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ li{
+     list-style: none;
+ }
+a{
+    text-decoration: none;
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    /*不允许改变尺寸*/
+    resize: none;
+    /*元素的外观  none没有任何样式*/
+    -webkit-appearance: none;
+}
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+/*common*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
